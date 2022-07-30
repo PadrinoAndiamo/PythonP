@@ -1,16 +1,7 @@
-# This is a sample Python script.
+def policz_wyplate (podstawa, premia_rzandu=0, premia_klienta=0, hajs_z_youtube=0):
+    return podstawa + premia_klienta + premia_rzandu + hajs_z_youtube
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+pensja =policz_wyplate(1000, 1500)
+print(f'Zarobiłem {pensja}')
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(f'Zarobiłem, podejście drugie {policz_wyplate(1000, hajs_z_youtube=1000)}')
